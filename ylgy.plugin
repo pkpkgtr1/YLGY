@@ -1,0 +1,12 @@
+#!name = 羊了个羊速通
+#!desc = 需要手动先通关第一局，才能速通。
+#!openUrl = 
+#!author = yangdaozhao
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/60px/ylgy.png
+
+[Script]
+http-response ^https?:\/\/cat\-match\.easygame2021\.com\/sheep\/v1\/game\/map\_info\_new(.*) script-path=https://raw.githubusercontent.com/pkpkgtr1/YLGY/main/ylgy.js,requires-body=true, tag=羊了个羊速通
+  
+[MITM]
+hostname = *.easygame2021.com
